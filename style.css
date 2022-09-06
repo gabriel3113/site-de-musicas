@@ -1,0 +1,1155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #040404, #131515, #1D1F1F) fixed;
+    height: 0vh;
+}
+
+#erro {
+    margin-bottom: 509.3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.7);
+}
+
+header {
+    display: flex;
+    background-color: #333;
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-weight: bolder;
+    text-align: center;
+    color: #fff;
+}
+
+.search-music {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    width: 10vw;
+    position: absolute;
+    left: 2%;
+}
+
+.music {
+    color: #FFB907;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 5vh;
+    width: 40vw;
+    padding: .6rem;
+    border-radius: 15px;
+    line-height: 2;
+    width: 100%;
+    max-width: 600px;
+    background-color: #333;
+    margin-top: 2rem;
+}
+
+input::placeholder {
+    color: #fff;
+    font-size: 1rem;
+}
+
+input {
+    color: #fff;
+}
+
+.box {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100vw;
+    color: #fff;
+}
+
+.fa-magnifying-glass {
+    float: right;
+    color: #fff;
+}
+
+.search-music {
+    margin-bottom: 2rem;
+}
+
+.search-music button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    margin: 1.3rem 0 0 1rem;
+    width: 6vw;
+    background-color: #333;
+    color: #FFF;
+    border-radius: 10px;
+    font-size: .9rem;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+}
+
+.search-music button:hover {
+    cursor: pointer;
+    border-color: #FFF;
+    font-weight: 600;
+    transform: scale(1.06);
+}
+
+.titulo-pg {
+    margin: 4rem auto 1rem auto;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.7);
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto 5rem auto;
+    height: 80vh;
+    width: 90vw;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 0 9rem;
+    align-items: center;
+}
+
+.sub-conteiner {
+    display: flex;
+    height: 28vh;
+    width: 15vw;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fa-circle-play {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+}
+
+.sub-conteiner:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    box-shadow: 1px 2px 7px 5px rgb(156, 156, 156);
+}
+
+
+.sub-conteiner:hover .banner {
+    opacity: 1;
+    text-shadow: 2px 2px 1px #000;
+}
+
+.sub-conteiner .nome {
+    margin: .7rem auto;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+}
+
+.img {
+    height: 245px;
+    width: 265px;
+    border-radius: 15px;
+}
+
+.imagem {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+main div {
+    display: none;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.letra {
+    width: 220px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+footer {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #FFF;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    margin-top: 7rem;
+}
+
+footer h1 {
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1280px) {
+
+    header {
+        display: flex;
+        background-color: #333;
+        height: 12vh;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+        font-size: 140%;
+        font-weight: bolder;
+        text-align: center;
+        color: #fff;
+    }
+
+    .search-music {
+        display: flex;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 20vw;
+        position: absolute;
+        left: 2%;
+    }
+
+    .music {
+        color: #FFB907;
+    }
+
+    .caixa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        height: 7vh;
+        width: 0;
+        padding: .6rem;
+        border-radius: 15px;
+        line-height: 2;
+        width: 1000%;
+        max-width: 400px;
+        background-color: #333;
+        margin-top: 2rem;
+    }
+
+    input::placeholder {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    input {
+        color: #fff;
+    }
+
+    .box {
+        border: none;
+        outline: none;
+        background: none;
+        width: 100vw;
+        color: #fff;
+    }
+
+    .fa-magnifying-glass {
+        float: right;
+        color: #fff;
+        display: none;
+    }
+
+    .search-music {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .search-music button {
+        display: block;
+        height: 5vh;
+        margin: 1rem auto;
+        width: 10vw;
+        background-color: #333;
+        color: #FFF;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.7);
+        font-weight: 400;
+    }
+
+    .search-music button:hover {
+        cursor: "";
+        border-color: "";
+        font-weight: 0;
+        transform: scale(0);
+    }
+
+    .titulo-pg {
+        margin: 4rem auto 1rem auto;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.7);
+    }
+
+    .conteiner {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        height: 130vh;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        padding: 0 0;
+        max-width: auto;
+        margin-bottom: 8rem;
+    }
+
+    .sub-conteiner {
+        display: inline;
+        height: 15vh;
+        width: 28vw;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        margin-top: 0;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .fa-circle-play {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 4rem;
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .sub-conteiner:hover {
+        opacity: 1;
+        cursor: "";
+        box-shadow: none;
+    }
+
+
+    .sub-conteiner:hover .banner {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    .sub-conteiner .nome {
+        font-size: 1.1rem;
+        text-align: "";
+        margin: .7rem 0;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-shadow: rgba(0, 0, 0, 0.7);
+        color: #FFF;
+    }
+
+    .img {
+        height: 205px;
+        width: 225px;
+        border-radius: 15px;
+    }
+
+    .imagem {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    main div {
+        display: none;
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .letra {
+        width: 220px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    footer {
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        color: #FFF;
+        width: 100%;
+        height: 10vh;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    footer h1 {
+        color: #fff;
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 912px) {
+
+    header {
+        display: flex;
+        background-color: #333;
+        height: 12vh;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+        font-size: 140%;
+        font-weight: bolder;
+        text-align: center;
+        color: #fff;
+    }
+
+    .search-music {
+        display: flex;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 20vw;
+        position: absolute;
+        left: 2%;
+    }
+
+    .music {
+        color: #FFB907;
+    }
+
+    .caixa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        height: 5vh;
+        width: 0;
+        padding: .6rem;
+        border-radius: 15px;
+        line-height: 2;
+        width: 1000%;
+        max-width: 400px;
+        background-color: #333;
+        margin-top: 2rem;
+    }
+
+    input::placeholder {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    input {
+        color: #fff;
+    }
+
+    .box {
+        border: none;
+        outline: none;
+        background: none;
+        width: 100vw;
+        color: #fff;
+    }
+
+    .fa-magnifying-glass {
+        float: right;
+        color: #fff;
+        display: none;
+    }
+
+    .search-music {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .search-music button {
+        display: block;
+        height: 4vh;
+        margin: 1rem auto;
+        width: 25vw;
+        background-color: #333;
+        color: #FFF;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.7);
+        font-weight: 400;
+    }
+
+    .search-music button:hover {
+        cursor: "";
+        border-color: "";
+        font-weight: 0;
+        transform: scale(0);
+    }
+
+    .titulo-pg {
+        margin: 4rem auto 1rem auto;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.7);
+    }
+
+    .conteiner {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        height: 130vh;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        padding: 0 0;
+        max-width: auto;
+    }
+
+    .sub-conteiner {
+        display: inline;
+        height: 15vh;
+        width: 28vw;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        margin-top: 0;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .fa-circle-play {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 4rem;
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .sub-conteiner:hover {
+        opacity: 1;
+        cursor: "";
+        box-shadow: none;
+    }
+
+
+    .sub-conteiner:hover .banner {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    .sub-conteiner .nome {
+        font-size: 1.3rem;
+        text-align: "";
+        margin: .7rem 0;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-shadow: rgba(0, 0, 0, 0.7);
+        color: #FFF;
+    }
+
+    .img {
+        height: 203.9px;
+        width: 220px;
+        border-radius: 15px;
+    }
+
+    .imagem {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    main div {
+        display: none;
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .letra {
+        width: 220px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    footer {
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        color: #FFF;
+        width: 100%;
+        height: 10vh;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    footer h1 {
+        color: #fff;
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        display: flex;
+        background-color: #333;
+        height: 12vh;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+        font-size: 140%;
+        font-weight: bolder;
+        text-align: center;
+        color: #fff;
+    }
+
+    .search-music {
+        display: flex;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 20vw;
+        position: absolute;
+        left: 2%;
+    }
+
+    .music {
+        color: #FFB907;
+    }
+
+    .caixa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        height: 5vh;
+        width: 0;
+        padding: .6rem;
+        border-radius: 15px;
+        line-height: 2;
+        width: 1000%;
+        max-width: 250px;
+        background-color: #333;
+        margin-top: 2rem;
+    }
+
+    input::placeholder {
+        color: #fff;
+        font-size: .8rem;
+    }
+
+    input {
+        color: #fff;
+    }
+
+    .box {
+        border: none;
+        outline: none;
+        background: none;
+        width: 100vw;
+        color: #fff;
+    }
+
+    .fa-magnifying-glass {
+        float: right;
+        color: #fff;
+        display: none;
+    }
+
+    .search-music {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .search-music button {
+        display: block;
+        height: 4vh;
+        margin: 1rem auto;
+        width: 25vw;
+        background-color: #333;
+        color: #FFF;
+        border-radius: 10px;
+        font-size: .8rem;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.7);
+        font-weight: 400;
+    }
+
+    .search-music button:hover {
+        cursor: "";
+        border-color: none;
+        font-weight: 0;
+        transform: scale(0);
+    }
+
+    .titulo-pg {
+        margin: 4rem auto 1rem auto;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #FFF;
+        text-align: center;
+        font-size: 1.3rem;
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.7);
+    }
+
+    .conteiner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 0;
+        height: 130vh;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        padding: 0 0;
+        max-width: 100px;
+    }
+
+    .sub-conteiner {
+        display: inline;
+        height: 20vh;
+        width: 35vw;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        margin-top: 0;
+        margin: 2.5rem 1.8rem;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .fa-circle-play {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 4rem;
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        z-index: 2;
+        display: none;
+    }
+
+    .sub-conteiner:hover {
+        opacity: 1;
+        cursor: "";
+        box-shadow: none;
+    }
+
+
+    .sub-conteiner:hover .banner {
+        opacity: 1;
+        text-shadow: none;
+        display: none;
+    }
+
+    .sub-conteiner .nome {
+        margin: .7rem auto;
+        font-size: .8rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-shadow: rgba(0, 0, 0, 0.7);
+        color: #FFF;
+    }
+
+    .img {
+        height: 130px;
+        width: 129px;
+        border-radius: 15px;
+    }
+
+    .imagem {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    main div {
+        display: none;
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .letra {
+        width: 220px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    audio{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+
+    footer {
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        color: #FFF;
+        width: 100%;
+        height: 10vh;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    footer h1 {
+        color: #fff;
+        font-weight: 200;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 280px) {
+
+    header {
+        display: flex;
+        background-color: #333;
+        height: 12vh;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+        font-size: 140%;
+        font-weight: bolder;
+        text-align: center;
+        color: #fff;
+    }
+
+    .search-music {
+        display: flex;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 20vw;
+        position: absolute;
+        left: 2%;
+    }
+
+    .music {
+        color: #FFB907;
+    }
+
+    .caixa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        height: 5vh;
+        width: 0;
+        padding: .6rem;
+        border-radius: 15px;
+        line-height: 2;
+        width: 1000%;
+        max-width: 250px;
+        background-color: #333;
+        margin-top: 2rem;
+    }
+
+    input::placeholder {
+        color: #fff;
+        font-size: .8rem;
+    }
+
+    input {
+        color: #fff;
+    }
+
+    .box {
+        border: none;
+        outline: none;
+        background: none;
+        width: 100vw;
+        color: #fff;
+    }
+
+    .fa-magnifying-glass {
+        float: right;
+        color: #fff;
+        display: none;
+    }
+
+    .search-music {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .search-music button {
+        display: block;
+        height: 5vh;
+        margin: 1rem auto;
+        width: 27vw;
+        background-color: #333;
+        color: #FFF;
+        border-radius: 10px;
+        font-size: .8rem;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.7);
+        font-weight: 400;
+    }
+
+    .search-music button:hover {
+        cursor: "";
+        border-color: none;
+        font-weight: 0;
+        transform: scale(0);
+    }
+
+    .titulo-pg {
+        margin: 4rem auto 1rem auto;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #FFF;
+        text-align: center;
+        font-size: 1rem;
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.7);
+    }
+
+    .conteiner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 0;
+        height: 130vh;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        padding: 0 0;
+        max-width: 100px;
+    }
+
+    .sub-conteiner {
+        display: inline;
+        height: 20vh;
+        width: 35vw;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        margin-top: 0;
+        margin: 2.5rem 1.2rem;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .fa-circle-play {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 4rem;
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        z-index: 2;
+        display: none;
+    }
+
+    .sub-conteiner:hover {
+        opacity: 1;
+        cursor: "";
+        box-shadow: none;
+    }
+
+
+    .sub-conteiner:hover .banner {
+        opacity: 1;
+        text-shadow: none;
+        display: none;
+    }
+
+    .sub-conteiner .nome {
+        margin: .7rem auto;
+        font-size: .8rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-shadow: rgba(0, 0, 0, 0.7);
+        color: #FFF;
+    }
+
+    .img {
+        height: 100px;
+        width: 100px;
+        border-radius: 15px;
+    }
+
+    .imagem {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    main div {
+        display: none;
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .letra {
+        width: 220px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    footer {
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        color: #FFF;
+        width: 100%;
+        height: 10vh;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    footer h1 {
+        color: #fff;
+        font-weight: 200;
+        font-size: .7rem;
+    }
+
+}
+
+.player audio {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+
+#letra {
+    text-align: left;
+    color: #fff;
+    display: none;
+}
+
+.titulo {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 10px 10px 18px #000;
+}
+
+.imagem {
+    margin: 3% 0px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 18px #000;
+}

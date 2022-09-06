@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+
+  <title>INDEX</title>
+</head>
+
+<body>
+
+  <header>
+    <img class="logo-image" src="./images/logo.png" alt="Logo">
+    <h1> Explore <span class="music"> Music </span> </h1>
+  </header>
+
+  <section class="search-music">
+    <label for="">
+      <section class="caixa">
+        <input type="text" id="input_pesquisa" name="pesquisa" class="box" placeholder="Pesquise por um cantor">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </section>
+    </label>
+    <button id="botao_pesquisa" onclick="check()">PESQUISAR</button>
+  </section>
+
+  <main>
+    <section class="principal">
+      <p class="titulo-pg">cantores em destaques</p>
+
+      <section class="conteiner">
+        <section class="sub-conteiner">
+          <section>
+            <i class="fa-solid fa-circle-play banner"></i>
+            <img src="images/Adele-conteiner.png" alt="adele" class="img">
+            <p class="nome">Adele</p>
+          </section>
+          <p class="nome" class="banner">Adele</p>
+        </section>
+
+        <section class="sub-conteiner">
+          <section>
+            <i class="fa-solid fa-circle-play banner"></i>
+            <img src="images/Pericles.jpg" alt="pericles" class="img">
+            <p class="nome">Péricles</p>
+          </section>
+        </section>
+
+        <section class="sub-conteiner">
+          <section>
+            <i class="fa-solid fa-circle-play banner"></i>
+            <img src="images/Gustavo_Lima.jpg" alt="Gusttavo Lima" class="img">
+            <p class="nome">Gusttavo Lima</p>
+          </section>
+        </section>
+
+        <section class="sub-conteiner">
+          <section>
+            <i class="fa-solid fa-circle-play banner"></i>
+            <img src="images/DJ_BOY.jpg" alt="set dj boy" class="img">
+            <p class="nome">DJ Boy</p>
+          </section>
+        </section>
+
+        <section class="sub-conteiner">
+          <section>
+            <i class="fa-solid fa-circle-play banner"></i>
+            <img src="images/Hugo_e_Guilherme.jpg" alt="hugo e guilherme" class="img">
+            <p class="nome">Hugo e Guilherme</p>
+          </section>
+        </section>
+
+        <section class="sub-conteiner">
+          <section>
+            <i class="fa-solid fa-circle-play banner"></i>
+            <img src="images/Joao_Gomes.jpg" alt="joao gomes" class="img">
+            <p class="nome">João Gomes</p>
+          </section>
+        </section>
+
+        <section class="sub-conteiner">
+          <section>
+            <i class="fa-solid fa-circle-play banner"></i>
+            <img src="images/Thiaguinho (1).jpg" alt="Thiaguinho" class="img">
+            <p class="nome">Thiaguinho</p>
+          </section>
+        </section>
+
+        <section class="sub-conteiner">
+          <section>
+            <i class="fa-solid fa-circle-play banner"></i>
+            <img src="images/Teto.png" alt="Teto" class="img">
+            <p class="nome">Teto</p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <div id="teto">
+      <section class="music-teste">
+        <img src="images/teto.jpg" alt="" class="imagem">
+      </section>
+
+      <section>
+        <p class="titulo"> FIM DE SEMANA NO RIO </p>
+      </section>
+
+
+      <section class="player">
+        <audio src="audio/teto.mp3" controls></audio>
+      </section>
+
+      <section class="mb-3 mt-3 w3col-2" id="lyrics_position_button">
+        <button type="button" class="btn btn-success" id="lyrics_button" onclick="ver_letra('teto')">Visualizar
+          Letra</button>
+      </section>
+
+      <p id="letra">
+        Eu sobrevivi (até aqui) <br>
+        Tenho história pra contar, eu vivi<br>
+        Dá uma olhada no pescoço, tem o brilho VVS<br>
+        Sigo tranquilo, eu nunca tô no stress <br><br>
+        Deus vai guiar, de viagem marcada só com a ida <br>
+        Driblando esses comédia com a habilidade<br>
+        Muito chique, bebê, com essa Lala, Lala<br>
+        Tocando no Brasil, em todas as casa <br><br>
+        Então aponta o fuzil, joga pra cima<br>
+        Fim de semana no Rio, droga e piscina<br>
+        Sabe que a 30PRAUM muda esse clima<br>
+        Diamante rosé me deixa exalando autoestima <br><br>
+        O perfume mais caro e o cabelo sempre alinhado<br>
+        O segredo do vagabundo é ter a bitch do lado (my bitch)<br>
+        Ela com a bolsa da Fendi carrega minha quadrada<br>
+        É bom que, se os homem passar aqui não arruma nada <br><br>
+        Na caminhada, já faz dez anos que eu tô na estrada<br>
+        E o fuzil, já faz três anos que ele não me viu<br>
+        Quando tudo era um desafio eu olhava e ninguém 'tava lá<br>
+        Vi o amor da minha mãe em um pequeno gesto de olhar <br><br>
+        Já sabia, sempre soube no que ia dar<br>
+        Quem diria que onde passasse ia encantar<br>
+        Eu mergulho nessa pussy, damn<br>
+        É tão molhado que parece piscina de natação <br><br>
+        Eu sei bem o que ela quer, do que ela gosta<br>
+        Só porque eu tenho dinheiro várias me adora<br>
+        Pontas soltas no cinzeiro, Audemars gira o ponteiro<br>
+        Cortando esses fofoqueiro, de cabeça erguida eu sei que <br><br>
+        Meu Deus vai guiar, de viagem marcada só com a ida<br>
+        Driblando esses comédia com a habilidade<br>
+        Muito chique, bebê, com essa Lala, Lala<br>
+        Tocando no Brasil em todas as casa<br>
+      </p>
+    </div>
+
+    <div id="thiaguinho">
+      <section class="music-teste">
+        <img src="images/thiaguinho.jpg" alt="" class="imagem">
+      </section>
+
+      <section>
+        <p class="titulo"> FALTA VOCÊ </p>
+      </section>
+
+      <audio src="audio/thiago.mp3" controls></audio>
+
+      <section class="mb-3 mt-3 w3col-2" id="lyrics_position_button">
+        <button type="button" class="btn btn-success" id="lyrics_button" onclick="ver_letra('thiaguinho')">Visualizar
+          Letra</button>
+      </section>
+
+      <p id="letra">
+        La laiá, laiá<br>
+        Juro que eu não sei mais o que eu vou falar<br>
+        Quando você me perguntar "tudo bem como vai a sua vida?"<br>
+        Como fosse uma questão já respondida<br>
+        Uma história que ficou mal resolvida<br>
+        Feito uma mensagem que nunca foi lida <br><br>
+        Posso te responder o que você quiser ouvir<br>
+        Mas, a verdade é essa aqui <br><br>
+        Falta de tudo, não sei de nada<br>
+        É só trabalho, volto pra casa<br>
+        Não tem você, falta você<br>
+        Não tem seu cheiro no travesseiro<br>
+        Quando eu me espalho na nossa cama<br>
+        Não tem você, falta você<br><br>
+        Falta de tudo, não sei de nada<br>
+        É só trabalho, volto pra casa<br>
+        Não tem você, falta você<br>
+        Não tem seu cheiro no travesseiro<br>
+        Quando eu me espalho na nossa cama<br>
+        Não tem você, falta você<br><br>
+        La laiá, laiá<br><br>
+      </p>
+
+    </div>
+
+    <div id="adele">
+      <section class="music-teste">
+        <img src="images/adele.png" alt="" class="imagem">
+      </section>
+
+      <section>
+        <p class="titulo"> EASY ON ME </p>
+      </section>
+
+      <audio src="audio/adele.mp3" controls></audio>
+
+      <section class="mb-3 mt-3 w3col-2" id="lyrics_position_button">
+        <button type="button" class="btn btn-success" id="lyrics_button" onclick="ver_letra('adele')">Visualizar
+          Letra</button>
+      </section>
+
+      <p id="letra">
+        There ain't no gold in this river<br>
+        That I've been washin' my hands in forever<br>
+        I know there is hope in these waters<br>
+        But I can't bring myself to swim<br>
+        When I am drowning in this silence<br>
+        Baby, let me in <br><br>
+        Go easy on me, baby<br>
+        I was still a child<br>
+        Didn't get the chance to<br>
+        Feel the world around me<br>
+        I had no time to choose<br>
+        What I chose to do<br>
+        So go easy on me <br><br>
+        There ain't no room for things to change<br>
+        When we are both so deeply stuck in our ways<br>
+        You can't deny how hard I have tried<br>
+        I changed who I was to put you both first<br>
+        But now I give up <br><br>
+        Go easy on me, baby<br>
+        I was still a child<br>
+        Didn't get the chance to<br>
+        Feel the world around me<br>
+        Had no time to choose<br>
+        What I chose to do<br>
+        So go easy on me<br>
+      </p>
+    </div>
+
+    <div id="pericles">
+      <section class="music-teste">
+        <img src="images/pericle.png" alt="" class="imagem">
+      </section>
+
+      <section>
+        <p class="titulo"> ATÉ QUE DUROU </p>
+      </section>
+
+      <audio src="audio/pericles.mp3" controls></audio>
+
+      <section class="mb-3 mt-3 w3col-2" id="lyrics_position_button">
+        <button type="button" class="btn btn-success" id="lyrics_button" onclick="ver_letra('pericles')">Visualizar
+          Letra</button>
+      </section>
+
+      <p id="letra">
+        Tentei fazer valer a pena<br>
+        Passei por cima dos problemas<br>
+        Achei que eu era o bastante<br>
+        Mas não fui pra você <br><br>
+        Tentei ser um cara perfeito<br>
+        Eu fiz as coisas do seu jeito<br>
+        Queria ser mais importante<br>
+        Mas não fui pra você<br><br>
+        Até que durou, me diz o porquê<br>
+        Perdeu tanto tempo aqui<br>
+        Te faço um favor, melhor eu sumir<br><br>
+        Fui mais um nas suas mãos<br>
+        Não sei se por carência ou falta de opção<br>
+        Só sei que eu senti amor<br>
+        Que pena, só eu senti amor<br><br>
+        O que faço com os planos dos próximos ano<br>s
+        Juro que não sei<br>
+        Só sei que eu senti amor<br>
+        Que pena, só eu senti amor<br><br>
+        Só eu senti amor<br>
+      </p>
+
+    </div>
+
+    <div id="gusttavolima">
+      <section class="music-teste">
+        <img src="images/Gus.jpg" alt="" class="imagem">
+      </section>
+
+      <section>
+        <p class="titulo"> FINAL DO FIM </p>
+      </section>
+
+      <audio src="audio/gustavo.mp3" controls></audio>
+
+      <section class="mb-3 mt-3 w3col-2" id="lyrics_position_button">
+        <button type="button" class="btn btn-success" id="lyrics_button" onclick="ver_letra('gusttavolima')">Visualizar
+          Letra</button>
+      </section>
+
+      <p id="letra">
+        Sinto a boca secando<br>
+        'Tá acontecendo de novo<br>
+        E o meu rosto molhando<br>
+        E a mão enxugando o olho <br><br>
+        Culpa dessa cidade que é tão pequena<br>
+        Faz a gente se esbarrar direto por aí<br>
+        Ainda bem que só te vi sozinha ai ai<br>
+        É que aqui dentro você ainda é minha ai ai<br><br>
+        Ainda é minha<br>
+        Confere no seu coração o pedaço que falta<br>
+        Que eu corto do meu e te entrego de volta<br>
+        Antes que alguém apareça e te roube de mim<br>
+        É questão de detalhe, isso a gente resolve<br><br>
+        Não vou ficar parado enquanto o amor se move<br>
+        A gente se acertando vai ser o final do fim<br>
+        A gente se acertando vai ser o final do fim<br>
+      </p>
+
+    </div>
+
+    <div id="dj">
+      <section class="music-teste">
+        <img src="images/DJ BOY.jpg" alt="" class="imagem">
+      </section>
+
+      <section>
+        <p class="titulo"> CORAÇÃO GELADO 3 </p>
+      </section>
+
+      <audio src="audio/dj.mp3" controls></audio>
+
+      <section class="mb-3 mt-3 w3col-2" id="lyrics_position_button">
+        <button type="button" class="btn btn-success" id="lyrics_button" onclick="ver_letra('dj')">Visualizar
+          Letra</button>
+      </section>
+
+      <p id="letra">
+        Yeah, DJ Boy<br>
+        É o 3, tem que vir como?<br>
+        Yeah, DJ Boy<br>
+        DJ Boy (DJ Boy)<br>
+        Passa a visão (passa a visão)<br>
+        <br>
+        Eu não vou me relacionar<br>
+        Então deixa os mandrake curtir a vida<br>
+        E as bebezinha, nós deu bota, quer montar na minha motoca<br>
+        Hoje implora pra dar em pião com a quadrilha<br>
+        <br>
+        Pouca atenção pros menor ralé, tirou nós de Zé<br>
+        Fica puto de tá vendo os maloca vencer<br>
+        A família nós deixou bem, humildade que vai além<br>
+        Subir sem pisar em ninguém<br>
+        <br>
+        Esse é o proceder dos menor ralé, tirou nós de Zé<br>
+        Fica puto de tá vendo os maloca vencer<br>
+        De Cartier, conto os plaques<br>
+        Yeah, ooh<br>
+        <br>
+        Por ser de comunidade, da pele escura<br>
+        Fica mais difícil, o mundo gira em torno do cifrão<br>
+        Vivências que me tornou forte<br>
+        Foi tipo escola, pôs minha mente no lugar, favela, evolução<br>
+        <br>
+        É que as dificuldades tá aí pra provar<br>
+        Quem é que vai correr, quantos que vão ficar<br>
+        Quando a fase ruim apertar?<br>
+        Quando a fase ruim apertar?<br>
+        <br>
+        Tipo uma roda gigante, que mudou pensamentos<br>
+        E quem não botou fé, vê o Letto chegar<br>
+        Tipo uma roda gigante, Deus me abençoa a todo instante<br>
+        E quem não botou fé, vê o menor chegar<br>
+        <br>
+        Tipo uma roda gigante, que mudou pensamentos<br>
+        E quem não botou fé, vê o Letto chegar<br>
+        Vê o DJ Boy chegar<br>
+        Deixa o favela chegar<br>
+        <br>
+        É porque cês não viram a caminhada<br>
+        E foi vários degrau nessa escada<br>
+        Então respeita a firma forte<br>
+        A tropa vai trajada de Lacoste<br>
+        <br>
+        Mas é o desejo das perturbada<br>
+        Os odiado lá das debochada<br>
+        Cê tá de olho é no malote<br>
+        Atura que o pai é bigode<br>
+        <br>
+        É porque o boy é perigo, se liga só nos artigo<br>
+        Bebê, nós é bandido, e não pode se apegar<br>
+        Maloca sem compromisso, já se tornamos seu vício<br>
+        Se envolve sem perguntar<br>
+        <br>
+        Porque eu sabia que, se não fosse o plaque<br>
+        Cê não ia tá aqui, então mentir pra quê?<br>
+        Não vou ser infeliz pra agradar você<br>
+        Diz aí, cê vai ficar ou vai correr?<br>
+        <br>
+        E a flechada do cupido te enganou<br>
+        Só era Pix, não era amor<br>
+        Confia no tempo, que o tempo é professor<br>
+        Na passada cara, uns pensam que é jogador<br>
+        <br>
+        Na dedeira, na corda, meu vulgo<br>
+        Olha os favelado por aí girando o mundo<br>
+        DJ Boy mandando o beat, só de vagabundo<br>
+        De vagabundo<br>
+        <br>
+        Coração no Alaska, jacaré tá cheio<br>
+        Firme nas palavra, os maloca é desse jeito<br>
+        Desbaratinado, vou todo de preto<br>
+        Porsche de uma milha e a Tiger vem no peito<br>
+        <br>
+        Coração no Alaska, jacaré tá cheio<br>
+        Firme nas palavra, os maloca é desse jeito<br>
+        Desbaratinado, vou todo de preto<br>
+        Porsche de uma milha e a Tiger vem no peito<br>
+        <br>
+        Chego na passada de jogador<br>
+        Coração tá no polo Norte, amor<br>
+        Aqui é só jogador caro, elenco fabuloso<br>
+        Que os menor dá trabalho, ooh<br>
+        <br>
+        As pervertida nós já bagunçou<br>
+        As bebê daqui, as bebê de lá<br>
+        Chama os aliado e vamos estourar champanhe<br>
+        Coração gelado porque amor é só de mãe<br>
+        <br>
+        Até tenho habilidade de não me apegar e sair fora<br>
+        Já diz o ditado que bandido não namora<br>
+        Até tenho habilidade de não me apegar e sair fora<br>
+        Já diz o ditado que bandido não namora<br>
+        <br>
+        É que os moleque é 100% favelado, bebê<br>
+        E o DJ Boy tá com a sua amiga e eu tô querendo você<br>
+        E eu vou fazer o quê, se você é mó gostosa?<br>
+        E nós é os menino que as menina gosta<br>
+        <br>
+        DJ Boy, é o tubarão<br>
+        Coração gelado parte 3<br>
+        E quem diria, né?<br>
+        <br>
+        E o golpe das bebezinha é pique Pix, cai na hora<br>
+        E o boy golpeador se esquiva e golpeia de volta<br>
+        E no 7, cai quem quer, ela diz que eu sou pra frente<br>
+        Homem não é tudo igual, o golpe é sempre diferente<br>
+        <br>
+        Eu pelos bololô e o coração na solidão<br>
+        Eu pelas madrugada implorando por compaixão<br>
+        Coração tá gelado, gelo boia no copão<br>
+        E a cada golada, sofrência de uma paixão<br>
+        <br>
+        Vem conhecer meu mundo, o famoso presente grego<br>
+        DNA vagabundo na arte do desapego<br>
+        Tubarão sem valor, a alma esculpida no gelo<br>
+        Se pá eu misturei nessa dose de Jack Daniel's<br>
+        <br>
+        Eu vou revoar<br>
+        Revoada, seja bem-vinda<br>
+        Coração tá no Alaska<br>
+        Eu vou morrer de hipotermia<br>
+        <br>
+        Só vai me acompanhar<br>
+        A Johnnie Walker e a tequila<br>
+        Adeus, vida de casado<br>
+        É verão, vou curtir a vida<br>
+        <br>
+        Coração gelado, não, hoje eu vou sem coração<br>
+        Pra quem quer uma fatia do bolo e nunca me estendeu a mão<br>
+        Calma lá, comedinha, quer pegar uma beirinha?<br>
+        Aonde que cê tava quando nós não tinha nada não?<br>
+        <br>
+        Eu tenho um troco pra pegar e conta pra pagar<br>
+        Do lixo ao luxo, então pega sua fama e joga fora<br>
+        É pouco pra entender e muito pra multiplicar<br>
+        E hoje ela fala que eu me acho, se eu como e vou embora<br>
+        <br>
+        Já me mandou tomar juízo, pensar no futuro<br>
+        Amor, eu tô ficando rico, mas cê me quer duro<br>
+        Será que ela ia tá comigo se fosse no escuro?<br>
+        Acho que não<br>
+        <br>
+        Olha pra cara de canalha, maloqueiro pitbull<br>
+        Nós é o terror das da leste, nós é o terror das do sul<br>
+        Paty fala: Não para, pede na boca e na cara<br>
+        Nós com mó cara de tralha e os boy com mó cara de cu<br>
+        <br>
+        Para de tentar entender, veinho, aceita que é nós<br>
+        Já guardei as peça na gaveta, e com a caneta, nós segue soltando a voz<br>
+        Nós é quebrada, nós é maloqueiro<br>
+        Nós não se ilude com puta e dinheiro<br>
+        Pra nós não é fácil, eu não nasci herdeiro<br>
+        Tentou me brecar, mas eu cheguei primeiro<br>
+        <br>
+        Nós é quebrada, nós é maloqueiro<br>
+        Pros parceirinho, um forte e verdadeiro<br>
+        Pra nós não é fácil, eu não nasci herdeiro<br>
+        Tentou me brecar, mas nós cheguei primeiro<br>
+        <br>
+        Oh, nós chegou primeiro<br>
+        DJ Boy<br>
+        Passe a visão<br>
+      </p>
+
+    </div>
+
+    <div id="hugoeguilherme">
+      <section class="music-teste">
+        <img src="images/Hugo e Guilherme.jpg" alt="" class="imagem">
+      </section>
+
+      <section>
+        <p class="titulo"> MAL FEITO </p>
+      </section>
+
+      <audio src="audio/Mal_Feito.mp3" controls></audio>
+
+      <section class="mb-3 mt-3 w3col-2" id="lyrics_position_button">
+        <button type="button" class="btn btn-success" id="lyrics_button"
+          onclick="ver_letra('hugoeguilherme')">Visualizar
+          Letra</button>
+      </section>
+
+      <p id="letra">
+        Essa música eu fiz pra você<br>
+        Nem perder seu tempo tentando me convencer<br>
+        Peço paciência, escuta até o fim<br>
+        Vai ficar claro pra você como ficou claro pra mim<br>
+        O seu beijo ficou ruim, assim, do nada <br><br>
+        Frequentemente compara seu ex comigo<br>
+        De repente pegou gosto por balada<br>
+        Isso não faz sentido<br>
+        Você começou a me tratar mal<br>
+        E na hora de fazer amor<br><br>
+        Sempre diz que não 'tá bem, não 'tá legal<br>
+        Lembra quando eu perguntei<br>
+        Se tinha outro alguém? Você negou<br>
+        Chegou na parte principal<br><br>
+        Você me traiu, levou um tempo, mas eu descobri<br>
+        Você não vale nada, 'tá claro pra mim<br>
+        Seu plano era bom, era quase perfeito<br>
+        Pena que tudo que 'cê faz, 'cê faz mal feito<br>
+      </p>
+
+    </div>
+
+    <div id="joaogomes">
+      <section class="music-teste">
+        <img src="images/João Gomes.jpg" alt="" class="imagem">
+      </section>
+
+      <section>
+        <p class="titulo"> DENGO </p>
+      </section>
+
+      <audio src="audio/dengo.mp3" controls></audio>
+
+      <section class="mb-3 mt-3 w3col-2" id="lyrics_position_button">
+        <button type="button" class="btn btn-success" id="lyrics_button" onclick="ver_letra('joaogomes')">Visualizar
+          Letra</button>
+      </section>
+
+      <p id="letra">
+        Quando cê vai perceber<br>
+        Que eu lutei pra te ter e te quero ao meu lado<br>
+        Eu sei que a minha fama não é boa<br>
+        E o povo me chama de beijo safado <br><br>
+        Mas eu não quero mais essa vida de farra<br>
+        Quando é que cê vai perceber<br>
+        Que eu lutei pra te ter e te quero ao meu lado<br>
+        Eu sei que a minha fama não é boa<br>
+        E o povo me chama de beijo safado<br><br>
+        Mas eu não quero mais essa vida de farra<br>
+        Tô precisando de dengo, não vê?<br>
+        Tô nem aí pra rolê, tô nem aí pra rolê<br>
+        Só tô querendo você<br><br>
+        Eu só tô querendo você<br>
+        Tô precisando de dengo, não vê?<br>
+        Tô nem aí pra rolê, tô nem aí pra rolê<br>
+        Só tô querendo você<br>
+        Eu só tô querendo você<br>
+        Larga tudo e vem me ver<br>
+      </p>
+
+    </div>
+
+    <div id="erro">
+      <h2>Cantor não encontrado</h2>
+    </div>
+  </main>
+
+  <footer>
+    <h1> &copy; 2022 - Todos os direitos reservados </h1>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/293e2d2061.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
